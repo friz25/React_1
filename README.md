@@ -44,3 +44,22 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+##----------------------------------ХОД РАБОТ
+npx create-react-app --template typescript .
+(выполнение = 3,5 минуты)
+
+удалить из `src` App, App.test, logo, reportWebVitals
+очистили index.tsx, App.tsx
+
+в App.tsx написали <h1>Hello React!!!!</h1>
+(запустим сайт) 
+npm start (занимает 50 сек)
+
+(добавим tailwind)
+https://tailwindcss.com/docs/guides/create-react-app
+```
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+перенесём строки из гайда (с сайта в проект (tailwind.config.js и index.css))
