@@ -70,3 +70,8 @@ npm i axios
 (60min)
 вынесли бизнеслогику в hooks>products.tsx
 loading и error в components>Loader.tsx, ErrorMessage.tsx
+
+(1:35:54)Роутинг в React
+npm i react-router-dom
+
+создадим папку `pages`
