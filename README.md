@@ -63,3 +63,6 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 перенесём строки из гайда (с сайта в проект (tailwind.config.js и index.css))
+
+(51min)
+npm i axios
