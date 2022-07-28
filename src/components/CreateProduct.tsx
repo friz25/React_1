@@ -15,7 +15,11 @@ const productData: IProduct = {
     }
 }
 
-export function CreateProduct() {
+interface CreateProductProps {
+    onCreate: () => void
+}
+
+export function CreateProduct({ onCreate }: CreateProductProps) {
     const [value, setValue] = useState("")
     const [error, setError] = useState("")
 
@@ -31,6 +35,8 @@ export function CreateProduct() {
         // создаём новый товар (с введённым (в окошке) именем)
         productData.title = value
         const response = await axios.post<IProduct>('https://fakestoreapi.com/products', productData)
+
+        onCreate()
     }
 
     const changeHandler = (event: React.KeyboardEvent<HTMLInputElement>) => {
