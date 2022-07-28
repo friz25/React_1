@@ -66,3 +66,7 @@ npx tailwindcss init -p
 
 (51min)
 npm i axios
+
+(60min)
+вынесли бизнеслогику в hooks>products.tsx
+loading и error в components>Loader.tsx, ErrorMessage.tsx
